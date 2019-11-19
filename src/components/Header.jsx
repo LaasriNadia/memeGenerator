@@ -1,9 +1,9 @@
 import React from 'react';
-import Svg from './svg';
+import { ReactComponent as Logo } from '../utils/logo.svg';
 const Header = () => {
   return (
     <div>
-      <Svg />
+      <Logo />
     </div>
   );
 };
