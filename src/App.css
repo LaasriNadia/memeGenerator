@@ -3,3 +3,82 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+/* add the eye blink and leaves animation */
+
+#Ellipse_4 {
+  animation: blink 1s infinite !important;
+  transform-origin: 50%;
+  transform-box: fill-box;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    transform: scale(1, 0.05) translate(554.4 347.61);
+  }
+
+  5%,
+  95% {
+    transform: scale(1, 1) translate(554.4 347.61);
+  }
+}
+
+#flowers>* {
+  fill: #309900
+}
+
+#gradient-flowers {
+  --color-stop-1: #309900;
+  --color-stop-2: #005600;
+}
+
+#gradient-flowers2 {
+  --color-stop-1: rgba(0, 100, 0, 1);
+  --color-stop-2: #005600;
+}
+
+#Path_142,
+#Path_143 {
+  animation: falling 10s 0s infinite;
+  transform: skew(20deg);
+  fill: url(#gradient-flowers) #005600;
+}
+
+#Path_143 {
+  animation: falling 10s 2s infinite;
+  fill: url(#gradient-flowers2) #005600;
+}
+
+@keyframes falling {
+  0% {
+    transform: translate3d(300, 0, 0) rotate(0deg);
+  }
+
+  100% {
+    transform: translate3d(-350px, 700px, 0) rotate(90deg);
+    opacity: 0;
+  }
+}
+
+.container {
+  left: 50%;
+  height: 0;
+  width: 50%;
+  padding-top: 37.16%;
+  position: relative;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.clip_path {
+  height: 100vh;
+  clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 0 43%, 0 0);
+  background: rgb(234, 251, 245, 41%);
+
+}
