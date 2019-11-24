@@ -7,6 +7,7 @@ export default class App extends Component {
     return (
       <div className='App'>
         <Header />
+        <div style={{ height: '600px' }} />
       </div>
     );
   }

@@ -2,8 +2,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
+a {
+  text-decoration: none;
+}
 /* add the eye blink and leaves animation */
 
 #Ellipse_4 {
@@ -13,7 +16,6 @@
 }
 
 @keyframes blink {
-
   0%,
   100% {
     transform: scale(1, 0.05) translate(554.4 347.61);
@@ -25,8 +27,8 @@
   }
 }
 
-#flowers>* {
-  fill: #309900
+#flowers > * {
+  fill: #309900;
 }
 
 #gradient-flowers {
@@ -79,6 +81,97 @@ svg {
 .clip_path {
   height: 100vh;
   clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 0 43%, 0 0);
-  background: rgb(234, 251, 245, 41%);
+  background: rgb(182, 234, 216);
+}
 
+.left {
+  width: 50%;
+  height: 0;
+}
+.left ul {
+  list-style: none;
+  display: flex;
+  padding-top: 5%;
+  margin-left: 80px;
+}
+.left ul a {
+  /* padding-right: 6%; */
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(67, 61, 81);
+  font-weight: 300;
+  transition: all 0.3s;
+}
+.left ul li {
+  padding-right: 5%;
+}
+
+.left ul a:hover {
+  color: rgb(255, 101, 132);
+}
+
+.header_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title_container {
+  display: flex;
+  flex-direction: column;
+  margin: 10%;
+}
+.title_container > * {
+  /* padding-top: 10%; */
+}
+.title_container span {
+  /* color: rgb(255, 101, 132); */
+}
+.title_container b {
+  color: rgb(24, 20, 21);
+  font-size: 1.5rem;
+}
+.left button {
+  margin: 10% 0;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgb(255, 101, 132);
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 50px 0;
+}
+.left button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.left button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.left button:hover span {
+  padding-right: 25px;
+}
+.left button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.left .ownmeme {
+  font-size: 4.5rem;
+  color: rgb(255, 101, 132);
+}
+.title_container p {
+  width: 80%;
 }
