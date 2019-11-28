@@ -3,10 +3,14 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  color: #404040;
 }
+
 a {
   text-decoration: none;
 }
+
+
 /* add the eye blink and leaves animation */
 
 #Ellipse_4 {
@@ -16,6 +20,7 @@ a {
 }
 
 @keyframes blink {
+
   0%,
   100% {
     transform: scale(1, 0.05) translate(554.4 347.61);
@@ -27,7 +32,7 @@ a {
   }
 }
 
-#flowers > * {
+#flowers>* {
   fill: #309900;
 }
 
@@ -72,6 +77,12 @@ a {
   position: relative;
 }
 
+.Header {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
 svg {
   position: absolute;
   top: 0;
@@ -79,21 +90,25 @@ svg {
 }
 
 .clip_path {
+  position: absolute;
+  width: 100vw;
   height: 100vh;
   clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 0 43%, 0 0);
-  background: rgb(182, 234, 216);
+  background: rgb(140, 243, 169);
 }
 
 .left {
   width: 50%;
   height: 0;
 }
+
 .left ul {
   list-style: none;
   display: flex;
   padding-top: 5%;
   margin-left: 80px;
 }
+
 .left ul a {
   /* padding-right: 6%; */
   font-size: 1.3rem;
@@ -102,6 +117,7 @@ svg {
   font-weight: 300;
   transition: all 0.3s;
 }
+
 .left ul li {
   padding-right: 5%;
 }
@@ -111,8 +127,10 @@ svg {
 }
 
 .header_container {
+  position: relative;
   display: flex;
   flex-direction: column;
+  height: inherit;
 }
 
 .title_container {
@@ -120,16 +138,20 @@ svg {
   flex-direction: column;
   margin: 10%;
 }
-.title_container > * {
+
+.title_container>* {
   /* padding-top: 10%; */
 }
+
 .title_container span {
   /* color: rgb(255, 101, 132); */
 }
+
 .title_container b {
   color: rgb(24, 20, 21);
   font-size: 1.5rem;
 }
+
 .left button {
   margin: 10% 0;
   display: inline-block;
@@ -145,6 +167,7 @@ svg {
   cursor: pointer;
   margin: 50px 0;
 }
+
 .left button span {
   cursor: pointer;
   display: inline-block;
@@ -164,14 +187,19 @@ svg {
 .left button:hover span {
   padding-right: 25px;
 }
+
 .left button:hover span:after {
   opacity: 1;
   right: 0;
 }
+
 .left .ownmeme {
   font-size: 4.5rem;
   color: rgb(255, 101, 132);
 }
+
 .title_container p {
   width: 80%;
+  color: rgb(67, 61, 81);
+  line-height: 1.5rem;
 }
