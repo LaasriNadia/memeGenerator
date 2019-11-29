@@ -5,34 +5,14 @@
   font-family: Arial, Helvetica, sans-serif;
   color: #404040;
 }
-
+body {
+  font-size: 62.5%;
+}
 a {
   text-decoration: none;
 }
 
-
-/* add the eye blink and leaves animation */
-
-#Ellipse_4 {
-  animation: blink 1s infinite !important;
-  transform-origin: 50%;
-  transform-box: fill-box;
-}
-
-@keyframes blink {
-
-  0%,
-  100% {
-    transform: scale(1, 0.05) translate(554.4 347.61);
-  }
-
-  5%,
-  95% {
-    transform: scale(1, 1) translate(554.4 347.61);
-  }
-}
-
-#flowers>* {
+#flowers > * {
   fill: #309900;
 }
 
@@ -68,7 +48,7 @@ a {
     opacity: 0;
   }
 }
-
+/* ---------------------------------- */
 .container {
   left: 50%;
   height: 0;
@@ -78,9 +58,10 @@ a {
 }
 
 .Header {
-  position: fixed;
+  position: relative;
   z-index: 999;
   width: 100%;
+  height: 100vh;
 }
 
 svg {
@@ -91,7 +72,7 @@ svg {
 
 .clip_path {
   position: absolute;
-  width: 100vw;
+  width: inherit;
   height: 100vh;
   clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 0 43%, 0 0);
   background: rgb(140, 243, 169);
@@ -106,11 +87,10 @@ svg {
   list-style: none;
   display: flex;
   padding-top: 5%;
-  margin-left: 80px;
+  margin-left: 8rem;
 }
 
 .left ul a {
-  /* padding-right: 6%; */
   font-size: 1.3rem;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(67, 61, 81);
@@ -119,7 +99,7 @@ svg {
 }
 
 .left ul li {
-  padding-right: 5%;
+  padding-right: 2rem;
 }
 
 .left ul a:hover {
@@ -139,33 +119,24 @@ svg {
   margin: 10%;
 }
 
-.title_container>* {
-  /* padding-top: 10%; */
-}
-
-.title_container span {
-  /* color: rgb(255, 101, 132); */
-}
-
 .title_container b {
   color: rgb(24, 20, 21);
   font-size: 1.5rem;
 }
 
 .left button {
-  margin: 10% 0;
-  display: inline-block;
-  border-radius: 4px;
+  display: inline;
+  border-radius: 0.4rem;
   background-color: rgb(255, 101, 132);
   border: none;
   color: #ffffff;
   text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 250px;
+  font-size: 3rem;
+  padding: 1.2rem;
+  width: 25rem;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 50px 0;
+  margin: 3rem 0;
 }
 
 .left button span {
@@ -180,12 +151,12 @@ svg {
   position: absolute;
   opacity: 0;
   top: 0;
-  right: -20px;
+  right: -2rem;
   transition: 0.5s;
 }
 
 .left button:hover span {
-  padding-right: 25px;
+  padding-right: 2.5rem;
 }
 
 .left button:hover span:after {
@@ -201,5 +172,23 @@ svg {
 .title_container p {
   width: 80%;
   color: rgb(67, 61, 81);
+  font-size: 1rem;
   line-height: 1.5rem;
+}
+
+/* --------------------------- header finished */
+
+.home_wrapper {
+  height: 1500px;
+  font-size: 1rem;
+  background: cornflowerblue;
+}
+
+.cards {
+  height: 500px;
+  background: pink;
+}
+.card {
+  height: 100px;
+  background: yellow;
 }
