@@ -5,14 +5,16 @@
   font-family: Arial, Helvetica, sans-serif;
   color: #404040;
 }
+
 body {
   font-size: 62.5%;
 }
+
 a {
   text-decoration: none;
 }
 
-#flowers > * {
+#flowers>* {
   fill: #309900;
 }
 
@@ -48,6 +50,7 @@ a {
     opacity: 0;
   }
 }
+
 /* ---------------------------------- */
 .container {
   left: 50%;
@@ -187,8 +190,11 @@ svg {
 .cards {
   height: 500px;
   background: pink;
+  display: flex;
+
 }
-.card {
+
+/* .card {
   height: 100px;
   background: yellow;
-}
+} */
