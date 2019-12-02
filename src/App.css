@@ -14,7 +14,7 @@ a {
   text-decoration: none;
 }
 
-#flowers>* {
+#flowers > * {
   fill: #309900;
 }
 
@@ -78,7 +78,7 @@ svg {
   width: inherit;
   height: 100vh;
   clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 0 43%, 0 0);
-  background: rgb(140, 243, 169);
+  background: #e2bed2;
 }
 
 .left {
@@ -184,7 +184,6 @@ svg {
 .home_wrapper {
   height: 1500px;
   font-size: 1rem;
-  /* background: cornflowerblue; */
 }
 
 .cards {
@@ -192,4 +191,25 @@ svg {
   display: flex;
   justify-content: space-around;
   margin-top: 5rem;
+}
+
+.card {
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  border: 2px solid #c5bcc1;
+  width: 15rem;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  color: black;
+  background-color: #fff;
+}
+
+.card:hover {
+  color: #fff;
+  background-color: #c5bcc1;
 }

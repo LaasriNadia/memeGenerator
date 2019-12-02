@@ -7,20 +7,17 @@ export default class cards extends Component {
       {
         id: 1,
         title: 'Picture',
-        action: 'Choose a meme picture',
-        bgColor: 'rgba(93, 187, 152, 1)'
+        action: 'Choose a meme picture'
       },
       {
         id: 2,
         title: 'Text',
-        action: 'Add text to it',
-        bgColor: 'rgba(191, 202, 210, 1)'
+        action: 'Add text to it'
       },
       {
         id: 3,
         title: 'Upload',
-        action: 'Your meme is ready to use',
-        bgColor: 'rgb(255, 173, 189)'
+        action: 'Your meme is ready to use'
       }
     ]
   };
@@ -28,8 +25,8 @@ export default class cards extends Component {
   render() {
     return (
       <div className='cards'>
-        {this.state.cards.map(card => (
-          <Card key={card.id} info={card} bgColor={card.bgColor} />
+        {this.state.cards.map((card, i) => (
+          <Card key={card.id} info={card} delay={500 * i} />
         ))}
       </div>
     );
