@@ -75,9 +75,22 @@ svg {
 
 .clip_path {
   position: absolute;
+  /* width: inherit;
+  height: 100vh; */
+  border-radius: 10px;
+  opacity: 0.2;
+
   width: inherit;
   height: 100vh;
-  clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 0 43%, 0 0);
+  /* z-index: 9; */
+  clip-path: circle(50% at 100% 20%);
+  transition: all .5s ease-in-out;
+  background: lawngreen;
+  /* clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 0 43%, 0 0); */
+}
+
+.clip_path:hover {
+  clip-path: circle(75%);
   background: #e2bed2;
 }
 
@@ -87,6 +100,7 @@ svg {
 }
 
 .left ul {
+  pointer-events: all;
   list-style: none;
   display: flex;
   padding-top: 5%;
@@ -110,6 +124,7 @@ svg {
 }
 
 .header_container {
+  pointer-events: none;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -128,6 +143,7 @@ svg {
 }
 
 .left button {
+  pointer-events: all;
   display: inline;
   border-radius: 0.4rem;
   background-color: rgb(255, 101, 132);
@@ -183,6 +199,7 @@ svg {
 
 .home_wrapper {
   height: 1500px;
+  top: 10rem;
   font-size: 1rem;
   position: relative;
 }
