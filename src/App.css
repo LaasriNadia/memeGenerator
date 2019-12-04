@@ -14,7 +14,7 @@ a {
   text-decoration: none;
 }
 
-#flowers > * {
+#flowers>* {
   fill: #309900;
 }
 
@@ -184,6 +184,7 @@ svg {
 .home_wrapper {
   height: 1500px;
   font-size: 1rem;
+  position: relative;
 }
 
 .cards {
@@ -191,6 +192,9 @@ svg {
   display: flex;
   justify-content: space-around;
   margin-top: 5rem;
+  position: absolute;
+  width: 100%;
+  top: 20%;
 }
 
 .card {
@@ -203,7 +207,8 @@ svg {
   width: 15rem;
   text-align: center;
   cursor: pointer;
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
   transition-duration: 0.4s;
   color: black;
   background-color: #fff;
@@ -212,4 +217,24 @@ svg {
 .card:hover {
   color: #fff;
   background-color: #c5bcc1;
+}
+
+
+.steps_container {
+  left: 0%;
+  height: 0;
+  width: 100%;
+  padding-top: 37.16%;
+  position: relative;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#steps {
+  margin: 0 auto;
+  width: 100%;
 }

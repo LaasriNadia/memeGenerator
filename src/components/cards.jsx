@@ -7,17 +7,17 @@ export default class cards extends Component {
       {
         id: 1,
         title: 'Picture',
-        action: 'Choose a meme picture'
+        action: 'Choose a meme picture',
       },
       {
         id: 2,
         title: 'Text',
-        action: 'Add text to it'
+        action: 'Add text to it',
       },
       {
         id: 3,
         title: 'Upload',
-        action: 'Your meme is ready to use'
+        action: 'Your meme is ready to use',
       }
     ]
   };
