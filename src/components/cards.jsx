@@ -5,19 +5,13 @@ export default class cards extends Component {
   state = {
     cards: [
       {
-        id: 1,
-        title: 'Picture',
-        action: 'Choose a meme picture',
+        id: 1
       },
       {
-        id: 2,
-        title: 'Text',
-        action: 'Add text to it',
+        id: 2
       },
       {
-        id: 3,
-        title: 'Upload',
-        action: 'Your meme is ready to use',
+        id: 3
       }
     ]
   };
@@ -26,7 +20,7 @@ export default class cards extends Component {
     return (
       <div className='cards'>
         {this.state.cards.map((card, i) => (
-          <Card key={card.id} info={card} delay={500 * i} />
+          <Card key={card.id} number={card.id} delay={900 * i} />
         ))}
       </div>
     );

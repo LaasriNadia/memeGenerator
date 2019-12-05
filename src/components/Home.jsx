@@ -11,8 +11,8 @@ export default class Home extends Component {
         <div className='home_wrapper'>
           <div className='steps_container'>
             <Steps />
+            <Cards />
           </div>
-          {/* <Cards /> */}
         </div>
       </Layout>
     );

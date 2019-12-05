@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #404040;
 }
 
@@ -14,7 +16,7 @@ a {
   text-decoration: none;
 }
 
-#flowers>* {
+#flowers > * {
   fill: #309900;
 }
 
@@ -84,7 +86,7 @@ svg {
   height: 100vh;
   /* z-index: 9; */
   clip-path: circle(50% at 100% 20%);
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   background: lawngreen;
   /* clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 0 43%, 0 0); */
 }
@@ -108,8 +110,8 @@ svg {
 }
 
 .left ul a {
-  font-size: 1.3rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  /* font-family: Arial, Helvetica, sans-serif; */
   color: rgb(67, 61, 81);
   font-weight: 300;
   transition: all 0.3s;
@@ -150,12 +152,12 @@ svg {
   border: none;
   color: #ffffff;
   text-align: center;
-  font-size: 3rem;
-  padding: 1.2rem;
-  width: 25rem;
+  font-size: 2rem;
+  padding: 0.3rem;
+  width: 18rem;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
 
 .left button span {
@@ -184,7 +186,8 @@ svg {
 }
 
 .left .ownmeme {
-  font-size: 4.5rem;
+  font-size: 4rem;
+  font-weight: lighter;
   color: rgb(255, 101, 132);
 }
 
@@ -199,43 +202,22 @@ svg {
 
 .home_wrapper {
   height: 1500px;
-  top: 10rem;
+  top: 2rem;
   font-size: 1rem;
   position: relative;
 }
 
 .cards {
-  height: 12rem;
+  /* height: 12rem; */
   display: flex;
   justify-content: space-around;
-  margin-top: 5rem;
-  position: absolute;
+  /* margin-top: 5rem; */
   width: 100%;
-  top: 20%;
+  position: absolute;
+  left: -180px;
+  top: 0px;
+  /* top: 20%; */
 }
-
-.card {
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
-    0 0 40px rgba(0, 0, 0, 0.1) inset;
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
-    0 0 40px rgba(0, 0, 0, 0.1) inset;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  border: 2px solid #c5bcc1;
-  width: 15rem;
-  text-align: center;
-  cursor: pointer;
-  -webkit-transition-duration: 0.4s;
-  /* Safari */
-  transition-duration: 0.4s;
-  color: black;
-  background-color: #fff;
-}
-
-.card:hover {
-  color: #fff;
-  background-color: #c5bcc1;
-}
-
 
 .steps_container {
   left: 0%;
@@ -254,4 +236,15 @@ svg {
 #steps {
   margin: 0 auto;
   width: 100%;
+}
+.circle {
+  text-align: center;
+  background: #ff6584;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  font-size: 25px;
 }

@@ -1,24 +1,13 @@
 import React from 'react';
-import Zoom from 'react-reveal/Zoom';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import Typography from '@material-ui/core/Typography';
+import Bounce from 'react-reveal/Bounce';
 
 const myCard = props => {
   return (
-    <Zoom delay={props.delay}>
-      <div className='card'>
-        <Card style={{ background: 'none', boxShadow: 'none' }}>
-          <CardContent>
-            <Typography>{props.info.title}</Typography>
-
-            <Typography variant='body2' component='p'>
-              {props.info.action}
-            </Typography>
-          </CardContent>
-        </Card>
+    <Bounce delay={props.delay} duration={3000}>
+      <div className='circle'>
+        <span>{props.number}</span>
       </div>
-    </Zoom>
+    </Bounce>
   );
 };
 
