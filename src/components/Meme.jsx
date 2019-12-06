@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { ReactComponent as Slide } from '../utils/slide.svg';
 
 export default class Meme extends Component {
   state = {
@@ -42,33 +43,37 @@ export default class Meme extends Component {
 
   render() {
     return (
-      <div className='meme_container'>
-        <div className='meme'>
-          <h1>Meme generator section</h1>
-          <img src={this.state.randomImg} alt='' />
-          <h2 className='top'>{this.state.topText}</h2>
-          <h2 className='bottom'>{this.state.bottomText}</h2>
+      <>
+        <h1 className='title'>Generate your meme</h1>
+
+        <div className='meme_container'>
+          <Slide className='memeSvg' />
+          <div className='meme'>
+            <img src={this.state.randomImg} alt='' />
+            <h2 className='top'>{this.state.topText}</h2>
+            <h2 className='bottom'>{this.state.bottomText}</h2>
+          </div>
+          <div className='form'>
+            <form>
+              <input
+                type='text'
+                placeholder='Enter the top text'
+                value={this.state.topText}
+                onChange={e => this.handleText(e, 'top')}
+              />
+              <input
+                type='text'
+                placeholder='Enter the bottom text'
+                value={this.state.bottomText}
+                onChange={e => this.handleText(e, 'bottom')}
+              />
+              <button onClick={e => this.generatePic(e)}>
+                Choose another picture
+              </button>
+            </form>
+          </div>
         </div>
-        <div className='form'>
-          <form>
-            <input
-              type='text'
-              placeholder='Enter the top text'
-              value={this.state.topText}
-              onChange={e => this.handleText(e, 'top')}
-            />
-            <input
-              type='text'
-              placeholder='Enter the bottom text'
-              value={this.state.bottomText}
-              onChange={e => this.handleText(e, 'bottom')}
-            />
-            <button onClick={e => this.generatePic(e)}>
-              Choose another picture
-            </button>
-          </form>
-        </div>
-      </div>
+      </>
     );
   }
 }

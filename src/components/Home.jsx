@@ -12,8 +12,8 @@ export default class Home extends Component {
           <div className='steps_container'>
             <Steps />
             <Cards />
-            <Meme />
           </div>
+          <Meme />
         </div>
       </Layout>
     );
