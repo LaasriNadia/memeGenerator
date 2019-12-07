@@ -4,6 +4,7 @@ import Cards from './cards';
 import Meme from './Meme';
 import { ReactComponent as Steps } from '../utils/steps.svg';
 
+import { Element } from 'react-scroll';
 export default class Home extends Component {
   render() {
     return (
@@ -13,7 +14,9 @@ export default class Home extends Component {
             <Steps />
             <Cards />
           </div>
-          <Meme />
+          <Element name='memes'>
+            <Meme />
+          </Element>
         </div>
       </Layout>
     );

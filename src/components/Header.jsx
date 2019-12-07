@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
 
 import { ReactComponent as Logo } from '../utils/logo.svg';
-
+import { scroller } from 'react-scroll';
 export default class Header extends Component {
+  scrollToElement() {
+    scroller.scrollTo('memes', {
+      duration: 800,
+      delay: 0,
+      smooth: true
+    });
+  }
   render() {
     return (
       <div className='Header'>
@@ -15,7 +22,12 @@ export default class Header extends Component {
               </li>
 
               <li>
-                <a href='/'>Memes</a>
+                <a
+                  style={{ cursor: 'pointer' }}
+                  onClick={() => this.scrollToElement()}
+                >
+                  Memes
+                </a>
               </li>
 
               <li>
@@ -25,7 +37,7 @@ export default class Header extends Component {
 
             <div className='title_container'>
               <b>Generate Your</b> <span className='ownmeme'>Own Memes</span>
-              <button>
+              <button onClick={() => this.scrollToElement()}>
                 <span>Make Memes</span>
               </button>
               <p>
