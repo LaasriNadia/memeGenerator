@@ -16,7 +16,7 @@ a {
   text-decoration: none;
 }
 
-#flowers > * {
+#flowers>* {
   fill: #309900;
 }
 
@@ -201,22 +201,18 @@ svg {
 /* --------------------------- header finished */
 
 .home_wrapper {
-  top: 2rem;
   font-size: 1rem;
-  height: 1500px;
+  height: 1000px;
   position: relative;
 }
 
 .cards {
-  /* height: 12rem; */
   display: flex;
   justify-content: space-around;
-  /* margin-top: 5rem; */
   width: 100%;
   position: absolute;
-  left: -180px;
+  left: -150px;
   top: 0px;
-  /* top: 20%; */
 }
 
 .steps_container {
@@ -344,6 +340,12 @@ h1 .title {
   z-index: -1;
 }
 
+.home_wrapper h1 {
+  text-align: center;
+  margin-left: 2rem;
+}
+
+
 /* footer */
 footer {
   background: #2f2e41;
@@ -362,4 +364,75 @@ footer p {
   display: flex;
   justify-content: space-between;
   width: 80px;
+}
+
+
+/* -------responsiveness  */
+@media only screen and (max-width:820px) {
+  .left ul {
+    margin-left: 10%;
+  }
+
+  .cards {
+    display: none;
+  }
+
+  .title_container p {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:650px) {
+  .left ul {
+    margin-left: 10%;
+  }
+
+  .title_container p {
+    width: 100%;
+  }
+
+  .container {
+    display: none;
+  }
+
+  .left {
+    text-align: center;
+    width: 100%;
+  }
+
+  .left button {
+    width: 100%;
+  }
+
+  .meme {
+    width: 60%;
+    height: 400px;
+  }
+
+}
+
+@media only screen and (max-width:650px) {
+  .memeSvg {
+    display: none;
+  }
+
+  .meme {
+    width: inherit;
+    left: 0;
+    height: 400px;
+  }
+
+  .form {
+    top: 440px;
+  }
+
+  form {
+    flex-direction: column;
+    align-content: space-between;
+    height: 200px;
+  }
+
+  .home_wrapper h1 {
+    margin-left: 0rem;
+  }
 }

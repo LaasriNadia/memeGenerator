@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { ReactComponent as Slide } from '../utils/slide.svg';
 
-import { capture } from './test';
-import html2canvas from 'html2canvas';
+import { captureMeme } from './Capture';
 export default class Meme extends Component {
   state = {
     topText: '',
@@ -43,9 +42,9 @@ export default class Meme extends Component {
     });
   };
 
-  test = e => {
+  capture = e => {
     e.preventDefault();
-    capture();
+    captureMeme();
   };
 
   render() {
@@ -82,7 +81,7 @@ export default class Meme extends Component {
               <button onClick={e => this.generatePic(e)}>
                 Choose another picture
               </button>
-              <button onClick={e => this.test(e)}>Download</button>
+              <button onClick={e => this.capture(e)}>Download</button>
             </form>
           </div>
         </div>
