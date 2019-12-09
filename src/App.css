@@ -5,8 +5,9 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  /* color: #404040; */
 }
+
+
 
 body {
   font-size: 62.5%;
@@ -77,18 +78,13 @@ svg {
 
 .clip_path {
   position: absolute;
-  /* width: inherit;
-  height: 100vh; */
   border-radius: 10px;
   opacity: 0.2;
-
   width: inherit;
   height: 100vh;
-  /* z-index: 9; */
   clip-path: circle(50% at 100% 20%);
   transition: all 0.5s ease-in-out;
   background: lawngreen;
-  /* clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 0 43%, 0 0); */
 }
 
 .clip_path:hover {
@@ -111,7 +107,6 @@ svg {
 
 .left ul a {
   font-size: 1rem;
-  /* font-family: Arial, Helvetica, sans-serif; */
   color: rgb(67, 61, 81);
   font-weight: 300;
   transition: all 0.3s;
@@ -200,13 +195,8 @@ svg {
 
 /* --------------------------- header finished */
 
-.home_wrapper {
-  font-size: 1rem;
-  height: 1200px;
-  position: relative;
-}
 
-.cards {
+*/ .cards {
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -221,7 +211,6 @@ svg {
   width: 100%;
   padding-top: 37.16%;
   position: relative;
-  margin: 2rem 0;
 }
 
 svg {
@@ -297,12 +286,12 @@ form {
 }
 
 .meme_container {
-  position: relative;
   text-align: center;
   display: flex;
   flex-direction: column;
   padding: 1rem;
   margin: 2rem 0;
+  height: 700px;
 }
 
 button {
@@ -343,17 +332,19 @@ h1 .title {
 .home_wrapper h1 {
   text-align: center;
   margin-left: 2rem;
+  position: absolute;
 }
 
 
 /* footer */
+
 footer {
-  background: #2f2e41;
   height: 100px;
   font-size: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #2F2E41;
 }
 
 footer p {
@@ -363,7 +354,7 @@ footer p {
 .social_icons {
   display: flex;
   justify-content: space-between;
-  width: 80px;
+  width: 100px;
 }
 
 

@@ -10,9 +10,11 @@ const Footer = () => {
         <a href='https://github.com/LaasriNadia'>
           <GitHubIcon
             style={{
-              position: 'relative',
               fill: 'black',
-              cursor: 'pointer'
+              cursor: 'pointer',
+              position: 'relative',
+              height: '35px',
+              width: '35px'
             }}
           />
         </a>
@@ -20,9 +22,11 @@ const Footer = () => {
         <a href='https://twitter.com/laasrinadiaa'>
           <TwitterIcon
             style={{
-              position: 'relative',
               fill: '#1DA1F2',
-              cursor: 'pointer'
+              cursor: 'pointer',
+              position: 'relative',
+              height: '35px',
+              width: '35px'
             }}
           />
         </a>

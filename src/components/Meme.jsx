@@ -49,43 +49,35 @@ export default class Meme extends Component {
 
   render() {
     return (
-      <>
-        <h1 className='title'>Generate your meme</h1>
-
-        <div className='meme_container'>
-          <Slide className='memeSvg' />
-          <div className='meme' id='capture'>
-            <img
-              src={this.state.randomImg}
-              alt='Meme'
-              crossOrigin='anonymous'
-            />
-            <h2 className='top'>{this.state.topText}</h2>
-            <h2 className='bottom'>{this.state.bottomText}</h2>
-          </div>
-
-          <div className='form'>
-            <form>
-              <input
-                type='text'
-                placeholder='Enter the top text'
-                value={this.state.topText}
-                onChange={e => this.handleText(e, 'top')}
-              />
-              <input
-                type='text'
-                placeholder='Enter the bottom text'
-                value={this.state.bottomText}
-                onChange={e => this.handleText(e, 'bottom')}
-              />
-              <button onClick={e => this.generatePic(e)}>
-                Choose another picture
-              </button>
-              <button onClick={e => this.capture(e)}>Download</button>
-            </form>
-          </div>
+      <div className='meme_container'>
+        <Slide className='memeSvg' />
+        <div className='meme' id='capture'>
+          <img src={this.state.randomImg} alt='Meme' crossOrigin='anonymous' />
+          <h2 className='top'>{this.state.topText}</h2>
+          <h2 className='bottom'>{this.state.bottomText}</h2>
         </div>
-      </>
+
+        <div className='form'>
+          <form>
+            <input
+              type='text'
+              placeholder='Enter the top text'
+              value={this.state.topText}
+              onChange={e => this.handleText(e, 'top')}
+            />
+            <input
+              type='text'
+              placeholder='Enter the bottom text'
+              value={this.state.bottomText}
+              onChange={e => this.handleText(e, 'bottom')}
+            />
+            <button onClick={e => this.generatePic(e)}>
+              Choose another picture
+            </button>
+            <button onClick={e => this.capture(e)}>Download</button>
+          </form>
+        </div>
+      </div>
     );
   }
 }
