@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { ReactComponent as Slide } from '../utils/slide.svg';
 
+import { capture } from './test';
 import html2canvas from 'html2canvas';
 export default class Meme extends Component {
   state = {
@@ -44,17 +45,7 @@ export default class Meme extends Component {
 
   test = e => {
     e.preventDefault();
-    let object = this.refs.memeref;
-    // console.log(object);
-    html2canvas(object, {
-      logging: true,
-      letterRendering: 1,
-      allowTaint: true,
-      useCORS: true
-    }).then(canvas => {
-      var imgData = canvas.toDataURL('image/jpeg');
-      console.log(imgData);
-    });
+    capture();
   };
 
   render() {
@@ -64,8 +55,12 @@ export default class Meme extends Component {
 
         <div className='meme_container'>
           <Slide className='memeSvg' />
-          <div className='meme'>
-            <img src={this.state.randomImg} alt='Meme' ref='memeref' />
+          <div className='meme' id='capture'>
+            <img
+              src={this.state.randomImg}
+              alt='Meme'
+              crossOrigin='anonymous'
+            />
             <h2 className='top'>{this.state.topText}</h2>
             <h2 className='bottom'>{this.state.bottomText}</h2>
           </div>
