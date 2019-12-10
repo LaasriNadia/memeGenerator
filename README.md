@@ -1,6 +1,7 @@
 
 
-![Image of theProject](https://ibb.co/yBmrhGS][img]https://i.ibb.co/DgPZGsp/memes.png)
+![memes](https://user-images.githubusercontent.com/49839827/70555853-247a9a80-1b80-11ea-848b-d493f2aaf895.PNG)
+
 
 # Description
 Meme generator app, choose your picture u want and put text on it.
