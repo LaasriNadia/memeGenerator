@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
+![Image of theProject](https://ibb.co/yBmrhGS][img]https://i.ibb.co/DgPZGsp/memes.png)
 
 # Description
 Meme generator app, choose your picture u want and put text on it.
